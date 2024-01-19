@@ -6,23 +6,27 @@ using TMPro;
 public class CoinCounter : MonoBehaviour
 {
     public static CoinCounter instance;
+    [SerializeField] private TextMeshProUGUI _coinText;
 
-    public TMPro.TextMeshProUGUI coinText;
-    public int currentCoins = 0;
+    private int _coin;
 
-    void Awake()
+    private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+    }   
+
+    private void Start()
+    {
+        _coinText.text = _coin.ToString();
     }
 
-     void Start()
+    public void UpdateCoin()
     {
-        coinText.text = "COINS: " + currentCoins.ToString();
-    }
-
-    public void IncreaseCoins(int v)
-    {
-        currentCoins += v;
-        coinText.text = "COINS: " + currentCoins.ToString();
+        _coin++;
+        _coinText.text = _coin.ToString();
     }
 }

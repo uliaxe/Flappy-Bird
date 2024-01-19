@@ -43,4 +43,5 @@ public class Score : MonoBehaviour
         _scoreText.text = _score.ToString();
         UpdateHighScore();
     }
+
 }

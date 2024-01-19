@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PipeIncreaseScore : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Pipe
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Score.instance.UpdateScore();          
+            if (gameObject.CompareTag("Pipe"))
+            {
+                Score.instance.UpdateScore();
+            }
+            else if (gameObject.CompareTag("Coin"))
+            {
+                CoinCounter.instance.UpdateCoin();
+            }
+            }
         }
     }
-}
