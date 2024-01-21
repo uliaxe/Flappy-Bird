@@ -13,10 +13,7 @@ public class PipeIncreaseScore : MonoBehaviour
             {
                 Score.instance.UpdateScore();
             }
-            else if (gameObject.CompareTag("Coin"))
-            {
-                CoinCounter.instance.UpdateCoin();
-            }
-            }
+
         }
     }
+}
