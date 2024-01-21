@@ -11,6 +11,7 @@ public class Coin : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             coinManager.instance.ChangeCoin(coinValue);
+            Score.instance.UpdateScore();
         }
     }
 }
