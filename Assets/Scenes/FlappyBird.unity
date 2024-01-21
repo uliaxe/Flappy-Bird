@@ -434,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82, y: -204}
+  m_AnchoredPosition: {x: -88.542, y: -174.51}
   m_SizeDelta: {x: 39.9166, y: 36.9857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &523191758
@@ -1272,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -205}
+  m_AnchoredPosition: {x: 12.7, y: -193.5}
   m_SizeDelta: {x: 152.04, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497057638
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': '
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a30c269e02619dc40aa7a5571f7e1161, type: 2}
   m_sharedMaterial: {fileID: 1503173512980619135, guid: a30c269e02619dc40aa7a5571f7e1161, type: 2}
@@ -2111,7 +2111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100595149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39813aa47f196024380dc8b85f1919b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 49e5688cdd350cd4d9f5eedbbb1633e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinText: {fileID: 1497057638}
+  text: {fileID: 1497057638}
